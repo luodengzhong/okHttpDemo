@@ -1659,7 +1659,7 @@ containing a value of this type.
         public static final int icon=0x7f090026;
         public static final int ifRoom=0x7f090016;
         public static final int image=0x7f090023;
-        public static final int imageview=0x7f090041;
+        public static final int imageview=0x7f090040;
         public static final int imageview2=0x7f090042;
         public static final int listMode=0x7f09000a;
         public static final int list_item=0x7f090025;
@@ -1671,7 +1671,7 @@ containing a value of this type.
         public static final int progress_horizontal=0x7f090008;
         public static final int radio=0x7f09002b;
         public static final int result1=0x7f09003f;
-        public static final int result5=0x7f090040;
+        public static final int result5=0x7f090041;
         public static final int search_badge=0x7f090035;
         public static final int search_bar=0x7f090034;
         public static final int search_button=0x7f090036;

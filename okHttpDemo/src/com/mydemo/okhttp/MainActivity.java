@@ -6,10 +6,8 @@ import java.util.Map;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
-import android.util.Log;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 public class MainActivity extends HttpConnectionActivity {
 
@@ -51,11 +49,9 @@ public class MainActivity extends HttpConnectionActivity {
          */
         ImageView view = findView(R.id.imageview);
         // 加载图片
-        this.displayImage(mHandler, view, "http://h.hiphotos.baidu.com/image/pic/item/f9dcd100baa1cd11dd1855cebd12c8fcc2ce2db5.jpg", R.drawable.no_image);
-        TextView view1 = findView(R.id.result1);
-        view1.setText(MyApplication.mkdirs("/net_image/a/b"));
+        this.displayImage(mHandler, view, "https://www.baidu.com/img/bd_logo1.png", R.drawable.no_image);
         String p = MyApplication.mkdirs("/net_image/a/b");
-        this.downloadFile("http://avatar.csdn.net/2/3/B/1_ldz_wolf.jpg", p);
+        this.downloadFile("http://a4.att.hudong.com/23/09/01300000165488122547095974400.jpg", p);
     }
 
     public void httpResponse(String url, Map<String, Object> params, Object result) {
@@ -79,7 +75,7 @@ public class MainActivity extends HttpConnectionActivity {
                 ImageView view5 = findView(R.id.imageview2);
                 view5.setImageBitmap(ImageUtils.getLoacalBitmap(abstractPath));
                 TextView view1 = findView(R.id.result5);
-                view1.setText(abstractPath);
+                view1.setText("存储位置:"+abstractPath);
             }
         });
     }

@@ -365,7 +365,7 @@ int id homeAsUp 0x7f09000e
 int id icon 0x7f090026
 int id ifRoom 0x7f090016
 int id image 0x7f090023
-int id imageview 0x7f090041
+int id imageview 0x7f090040
 int id imageview2 0x7f090042
 int id listMode 0x7f09000a
 int id list_item 0x7f090025
@@ -377,7 +377,7 @@ int id progress_circular 0x7f090007
 int id progress_horizontal 0x7f090008
 int id radio 0x7f09002b
 int id result1 0x7f09003f
-int id result5 0x7f090040
+int id result5 0x7f090041
 int id search_badge 0x7f090035
 int id search_bar 0x7f090034
 int id search_button 0x7f090036
