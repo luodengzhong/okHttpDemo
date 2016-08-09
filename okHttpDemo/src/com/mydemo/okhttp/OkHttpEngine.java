@@ -16,8 +16,6 @@ import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.Handler;
-import android.util.Log;
-import android.view.View;
 import android.widget.ImageView;
 
 import com.squareup.okhttp.Cache;
@@ -38,9 +36,13 @@ public class OkHttpEngine {
 
     private OkHttpClient mOkHttpClient;
 
+    public static synchronized void initEngine() {
+        okHttpEngine = new OkHttpEngine();
+    }
+
     public static OkHttpEngine getInstance() {
         if (okHttpEngine == null) {
-            okHttpEngine = new OkHttpEngine();
+            initEngine();
         }
         return okHttpEngine;
     }
